@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ImFaris | Portfolio",
-  description: "ImFaris – Developer portfolio.",
+  title: "imFaris",
+  description: "imFaris portfolio.",
 };
 
 export default function RootLayout({
