@@ -41,7 +41,7 @@ export default function Home() {
             animation: float 3.2s ease-in-out infinite;
           }
         `}</style>
-        <div className="flex gap-6 w-full justify-center mt-4">
+        <div className="flex flex-wrap gap-4 sm:gap-6 w-full justify-center mt-4">
           <div className="relative group">
             <button className="bg-[#23272f] text-gray-500 font-semibold py-4 px-10 rounded-lg shadow text-lg border border-[#23272f] cursor-not-allowed opacity-80" disabled>
               Pay now
@@ -54,6 +54,15 @@ export default function Home() {
               disabled
             >
               Projects
+            </button>
+            <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#1e222a] text-emerald-300 text-xs font-mono px-3 py-1 rounded-full border border-emerald-900/40 select-none">Soon</span>
+          </div>
+          <div className="relative group">
+            <button
+              className="bg-[#23272f] text-gray-500 font-semibold py-4 px-10 rounded-lg shadow text-lg border border-[#23272f] cursor-not-allowed opacity-80"
+              disabled
+            >
+              Dashboard
             </button>
             <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#1e222a] text-emerald-300 text-xs font-mono px-3 py-1 rounded-full border border-emerald-900/40 select-none">Soon</span>
           </div>
