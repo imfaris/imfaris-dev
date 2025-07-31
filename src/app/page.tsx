@@ -1,25 +1,44 @@
 
+import Image from "next/image";
 export default function Home() {
   return (
     <div className="font-sans min-h-screen flex flex-col items-center justify-center bg-[#16181d] p-0">
       <main className="flex flex-col items-center gap-12 w-full max-w-2xl group">
-        <h1
-          className="text-6xl sm:text-5xl font-extrabold text-transparent bg-clip-text mb-2 text-center tracking-tight select-none"
-          style={{
-            backgroundImage: 'linear-gradient(270deg, #00fff7, #00ff99, #00bfff, #7f5fff, #00fff7)',
-            backgroundSize: '200% 200%',
-            backgroundPosition: '0% 50%',
-            WebkitBackgroundClip: 'text',
-            animation: 'gradientMove 5s linear infinite',
-          }}
-        >
-          ImFaris
-        </h1>
+        <div className="flex flex-col items-center">
+          <Image
+            src="/logo_transparent.png"
+            alt="ImFaris Logo"
+            width={112}
+            height={112}
+            className="mb-2 rounded-full animate-float select-none bg-transparent"
+            draggable={false}
+            priority
+          />
+          <h1
+            className="text-6xl sm:text-5xl font-extrabold text-transparent bg-clip-text mb-2 text-center tracking-tight select-none"
+            style={{
+              backgroundImage: 'linear-gradient(270deg, #00fff7, #00ff99, #00bfff, #7f5fff, #00fff7)',
+              backgroundSize: '200% 200%',
+              backgroundPosition: '0% 50%',
+              WebkitBackgroundClip: 'text',
+              animation: 'gradientMove 5s linear infinite',
+            }}
+          >
+            ImFaris
+          </h1>
+        </div>
         <style>{`
           @keyframes gradientMove {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
+          }
+          @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+          }
+          .animate-float {
+            animation: float 3.2s ease-in-out infinite;
           }
         `}</style>
         <div className="flex gap-6 w-full justify-center mt-4">
