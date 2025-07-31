@@ -23,9 +23,12 @@ export default function Home() {
           }
         `}</style>
         <div className="flex gap-6 w-full justify-center mt-4">
-          <button className="bg-[#23272f] hover:bg-[#232b39] text-gray-100 font-semibold py-4 px-10 rounded-lg shadow text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400/30 border border-[#23272f]">
-            Pay now
-          </button>
+          <div className="relative group">
+            <button className="bg-[#23272f] text-gray-500 font-semibold py-4 px-10 rounded-lg shadow text-lg border border-[#23272f] cursor-not-allowed opacity-80" disabled>
+              Pay now
+            </button>
+            <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#1e222a] text-emerald-300 text-xs font-mono px-3 py-1 rounded-full border border-emerald-900/40 select-none">Soon</span>
+          </div>
           <div className="relative group">
             <button
               className="bg-[#23272f] text-gray-500 font-semibold py-4 px-10 rounded-lg shadow text-lg border border-[#23272f] cursor-not-allowed opacity-80"
