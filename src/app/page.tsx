@@ -43,10 +43,12 @@ export default function Home() {
         `}</style>
         <div className="flex flex-wrap gap-4 sm:gap-6 w-full justify-center mt-4">
           <div className="relative group">
-            <button className="bg-[#23272f] text-gray-500 font-semibold py-4 px-10 rounded-lg shadow text-lg border border-[#23272f] cursor-not-allowed opacity-80" disabled>
-              Pay now
-            </button>
-            <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#1e222a] text-emerald-300 text-xs font-mono px-3 py-1 rounded-full border border-emerald-900/40 select-none">Soon</span>
+            <a
+              href="/buy"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 px-10 rounded-lg shadow text-lg border border-emerald-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+            >
+              Buy now
+            </a>
           </div>
           <div className="relative group">
             <button
@@ -77,6 +79,7 @@ export default function Home() {
           github.com/imFaris
         </a>
       </main>
-    </div>
+    </div >
+      
   );
 }
