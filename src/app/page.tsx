@@ -82,7 +82,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-slate-200 font-medium mb-2">Applications</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Tailored software solutions for your needs</p>
+              <p className="text-slate-400 text-sm leading-relaxed">Software solutions for your needs</p>
             </div>
             <div className="bg-slate-900/30 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 hover:bg-slate-800/30 transition-all duration-300">
               <div className="w-12 h-12 bg-slate-700 rounded-xl flex items-center justify-center mb-4 mx-auto">
