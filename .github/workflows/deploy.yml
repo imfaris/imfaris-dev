@@ -24,6 +24,7 @@ jobs:
           script: |
             cd /home/${{ secrets.VPS_USER }}/website/imfaris-dev
             git pull origin main
+            source ~/.nvm/nvm.sh
             npm install
             npm run build
             pm2 restart nextjs-app
