@@ -23,6 +23,19 @@ export default function Buy() {
           <div className="h-1 w-24 bg-gradient-to-r from-slate-600 via-slate-400 to-slate-600 rounded-full mb-4"></div>
         </div>
 
+        {/* Back to Home button (smaller, left-aligned) */}
+        <div className="mb-4 w-full flex justify-start">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white font-medium rounded-lg text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-slate-950 shadow-md hover:shadow-lg"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Home
+          </Link>
+        </div>
+
         {/* Products section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl mt-8">
           {/* SIM App */}
@@ -99,25 +112,18 @@ export default function Buy() {
                   <span className="text-sm">Content downloads & links</span>
                 </div>
               </div>
-              <button className="w-full py-4 px-6 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-slate-950 shadow-lg hover:shadow-xl">
-                Get Access
+              <button
+                className="w-full py-4 px-6 rounded-xl bg-slate-900/50 text-slate-500 font-medium text-lg border border-slate-800 cursor-not-allowed backdrop-blur-sm relative"
+                disabled
+              >
+                Coming Soon
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-slate-800 text-slate-300 text-xs font-medium px-3 py-1 rounded-full border border-slate-700">Soon</span>
               </button>
             </div>
           </div>
         </div>
 
-        {/* Back to Home button */}
-        <div className="mt-12">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-slate-800/80 hover:bg-slate-700 text-slate-200 hover:text-white font-medium rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-slate-950 shadow-lg hover:shadow-xl"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            Back to Home
-          </Link>
-        </div>
+        {/* ...removed duplicate Back to Home button at the bottom... */}
       </main>
     </div>
   );
