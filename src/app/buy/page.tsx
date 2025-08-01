@@ -75,7 +75,6 @@ export default function Buy() {
                 disabled
               >
                 Coming Soon
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-slate-800 text-slate-300 text-xs font-medium px-3 py-1 rounded-full border border-slate-700">Soon</span>
               </button>
             </div>
           </div>
@@ -117,7 +116,6 @@ export default function Buy() {
                 disabled
               >
                 Coming Soon
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-slate-800 text-slate-300 text-xs font-medium px-3 py-1 rounded-full border border-slate-700">Soon</span>
               </button>
             </div>
           </div>
