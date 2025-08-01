@@ -18,23 +18,14 @@ export default function Buy() {
           </h1>
         </div>
         <div className="flex flex-row gap-6 w-full max-w-md justify-center">
-          <a
-            href="https://buy.polar.sh/polar_cl_yySFqytixHml0vXOoLyibe7mivgShNQHDADh10wVYqH"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 py-5 rounded-lg bg-[#23272f] text-emerald-300 text-lg font-semibold shadow hover:bg-[#23272f]/80 hover:text-emerald-200 transition-colors duration-150 border border-[#23272f] focus:outline-none focus:ring-2 focus:ring-emerald-400 text-center"
+          <button
+            className="flex-1 py-5 rounded-lg bg-[#23272f] text-emerald-300 text-lg font-semibold shadow border border-[#23272f] opacity-60 cursor-not-allowed text-center"
+            disabled
           >
             SIM
-          </a>
+          </button>
           <button className="flex-1 py-5 rounded-lg bg-[#23272f] text-indigo-300 text-lg font-semibold shadow hover:bg-[#23272f]/80 hover:text-indigo-200 transition-colors duration-150 border border-[#23272f] focus:outline-none focus:ring-2 focus:ring-indigo-400">Alioth Bot</button>
-          <a
-            href="https://buy.polar.sh/polar_cl_GcdBX3FunHtS9DwarbHhVC0oAaLJmcRZmSnpq241NZl"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 py-5 rounded-lg bg-[#23272f] text-pink-300 text-lg font-semibold shadow hover:bg-[#23272f]/80 hover:text-pink-200 transition-colors duration-150 border border-[#23272f] focus:outline-none focus:ring-2 focus:ring-pink-400 text-center"
-          >
-            Test
-          </a>
+
         </div>
         <Link
           href="/"
