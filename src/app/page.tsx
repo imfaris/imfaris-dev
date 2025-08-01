@@ -37,7 +37,7 @@ export default function Home() {
               href="/buy"
               className="bg-slate-800 hover:bg-slate-700 text-slate-100 font-medium py-4 px-12 rounded-xl shadow-xl text-lg border border-slate-700 hover:border-slate-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-slate-950 animate-subtle-glow"
             >
-              Get Started
+              Get Started (testing)
             </a>
           </div>
           <div className="relative group">
