@@ -81,7 +81,7 @@ export default function Buy() {
           </div>
 
           {/* Alioth Bot */}
-          <div className="bg-slate-900/30 backdrop-blur-sm border border-slate-800 rounded-2xl p-8 hover:bg-slate-800/30 transition-all duration-300">
+          <div className="bg-slate-900/30 backdrop-blur-sm border border-slate-800 rounded-2xl p-8 hover:bg-slate-800/30 transition-all duration-300 opacity-60 cursor-not-allowed">
             <div className="text-center">
               <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
