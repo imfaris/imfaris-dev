@@ -45,7 +45,7 @@ export default function Home() {
               className="bg-slate-900/50 text-slate-400 font-medium py-4 px-12 rounded-xl shadow-xl text-lg border border-slate-800 cursor-not-allowed backdrop-blur-sm"
               disabled
             >
-              Portfolio
+              My Portfolio
             </button>
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-slate-800 text-slate-300 text-xs font-medium px-3 py-1 rounded-full border border-slate-700 select-none">Coming Soon</span>
           </div>
@@ -54,7 +54,7 @@ export default function Home() {
               className="bg-slate-900/50 text-slate-400 font-medium py-4 px-12 rounded-xl shadow-xl text-lg border border-slate-800 cursor-not-allowed backdrop-blur-sm"
               disabled
             >
-              Dashboard
+              Bot Dashboard
             </button>
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-slate-800 text-slate-300 text-xs font-medium px-3 py-1 rounded-full border border-slate-700 select-none">Coming Soon</span>
           </div>
